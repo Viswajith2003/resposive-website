@@ -10,15 +10,15 @@
 
 <body>
     <main>
-        <div class="w-[100%] h-[100vh] ">
+        <div class="w-full min-h-screen">
 
-
-            <nav class="bg-white border-gray-200 dark:bg-gray-900 px-[70px]">
-                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto  py-4">
+            <!-- Navigation -->
+            <nav class="bg-white border-gray-200 dark:bg-gray-900 px-4 sm:px-8 lg:px-16 xl:px-20">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4">
                     <!-- Logo -->
                     <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
                         <span
-                            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Microsoft</span>
+                            class="self-center text-xl sm:text-2xl font-semibold whitespace-nowrap dark:text-white">Microsoft</span>
                     </a>
 
                     <!-- Toggle Button (Mobile) -->
@@ -59,280 +59,311 @@
                 </div>
             </nav>
 
-
-            <div class="w-[100%] h-[88vh] flex px-[100px]  ">
-                <div class="pt-40 w-[50%] h-[100%] flex flex-col justify-start gap-5">
-                    <h1 class="text-[4rem] font-semibold">Evelvate Your Barned <br> With Stunning App And <br> Website
-                        Design</h1>
-                    <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Sapiente
-                        voluptates quas vero odio
-                        illum <br>
-                        magni quo, commodi error aperiam explicabo quisquam, </p>
-                    <div class="flex gap-5 mt-8">
-                        <button class="bg-black text-white rounded-full px-5 py-2">Get Start</button>
-                        <button class="border border-gray-100 rounded-full px-5 py-2 hover:border-black">View
-                            Project</button>
+            <!-- Hero Section -->
+            <div class="w-full px-4 sm:px-8 lg:px-16 xl:px-20 py-8 sm:py-12">
+                <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 lg:pt-28 lg:pl-28">
+                    <!-- Text Content -->
+                    <div class="w-full lg:w-1/2 flex flex-col justify-center gap-5">
+                        <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold leading-tight">
+                            Elevate Your Brand <br class="hidden sm:block"> With Stunning App <br
+                                class="hidden sm:block"> And Website Design
+                        </h1>
+                        <p class="text-gray-500 text-sm sm:text-base">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptates quas vero odio
+                            illum magni quo, commodi error aperiam explicabo quisquam,
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 mt-4">
+                            <button class="bg-black text-white rounded-full px-6 py-3 hover:bg-gray-800 transition">Get
+                                Started</button>
+                            <button
+                                class="border border-gray-300 rounded-full px-6 py-3 hover:border-black transition">View
+                                Project</button>
+                        </div>
                     </div>
-                </div>
-                <div class=" w-[50%] h-[100%] flex justify-center item-center pt-50 pl-12">
-                    <div class="relative w-[70%] h-[70%] bg-yellow-500 rounded-lg">
-                        <div class="bg-white absolute top-0 left-0 rounded-lg w-[200px] p-2">
-                            <div class="bg-[#F5F5F5] rounded-lg overflow-hidden p-2">
-                                <h1 class="text-[2rem] font-medium">285+</h1>
-                                <p class="text-[0.8rem]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
-                                    ratione
-                                    dolorem.</p>
+
+                    <!-- Image Section -->
+                    <div class="w-full lg:w-1/2 flex justify-center items-center mt-8 lg:mt-0">
+                        <div class="relative w-full max-w-md aspect-square">
+                            <div class="relative w-full h-full bg-yellow-500 rounded-lg">
+                                <!-- Top Left Card -->
+                                <div class="bg-white absolute top-0 left-0 rounded-lg w-36 sm:w-48 p-2">
+                                    <div class="bg-gray-100 rounded-lg overflow-hidden p-2">
+                                        <h1 class="text-2xl sm:text-3xl font-medium">285+</h1>
+                                        <p class="text-xs sm:text-sm">Lorem ipsum, dolor sit amet consectetur
+                                            adipisicing elit. Vero ratione dolorem.</p>
+                                    </div>
+                                </div>
+                                <!-- Bottom Right Card -->
+                                <div class="bg-white absolute bottom-0 right-0 rounded-lg w-36 sm:w-48 p-2">
+                                    <div class="bg-black text-white rounded-lg overflow-hidden p-2">
+                                        <h1 class="text-2xl sm:text-3xl font-medium">285+</h1>
+                                        <p class="text-xs sm:text-sm">Lorem ipsum, dolor sit amet consectetur
+                                            adipisicing elit. Vero ratione dolorem.</p>
+                                    </div>
+                                </div>
+                                <img src="./images/bg.jpg" alt="image" class="h-full w-full rounded-lg object-cover">
                             </div>
                         </div>
-                        <div class="bg-white absolute bottom-0 right-0 rounded-lg w-[200px] p-2">
-                            <div class="bg-black text-white rounded-lg overflow-hidden p-2">
-                                <h1 class="text-[2rem] font-medium">285+</h1>
-                                <p class="text-[0.8rem]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
-                                    ratione
-                                    dolorem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Bar -->
+        <div class="w-full bg-black text-white py-6 sm:py-8 px-4">
+            <div class="flex flex-col sm:flex-row justify-around items-center gap-4 sm:gap-2 text-center">
+                <h2 class="text-xl sm:text-2xl font-medium">Branding</h2>
+                <h2 class="text-xl sm:text-2xl font-medium">Website</h2>
+                <h2 class="text-xl sm:text-2xl font-medium">Digital Marketing</h2>
+                <h2 class="text-xl sm:text-2xl font-medium">App</h2>
+            </div>
+        </div>
+
+        <!-- Testimonial Section -->
+        <div class="w-full bg-gray-100 py-12 sm:py-16 px-4 sm:px-8 lg:px-16 xl:px-20">
+            <div class="flex flex-col lg:flex-row gap-8">
+                <div class="w-full lg:w-1/2 flex items-center">
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight">
+                        Microsoft Design <br> Surpassed Our <br> Expectations
+                    </h1>
+                </div>
+                <div class="w-full lg:w-1/2 flex flex-col justify-center">
+                    <p class="text-gray-500 mb-6 text-sm sm:text-base">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti reprehenderit, sint sit culpa
+                        nesciunt excepturi, placeat sapiente quod quibusdam eligendi nostrum! Sed, dolore saepe aperiam
+                        explicabo dolorum est ullam mollitia.
+                    </p>
+                    <button
+                        class="self-start bg-gray-200 py-2 px-6 border-2 border-gray-300 rounded-full hover:border-gray-400 transition text-sm sm:text-base">
+                        Get in Touch Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="w-full py-12 sm:py-16 px-4 sm:px-8 lg:px-16 xl:px-20">
+            <div class="flex flex-col lg:flex-row gap-8 lg:gap-12">
+                <!-- Left Content -->
+                <div class="w-full lg:w-2/5">
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight mb-6">
+                        Passionate <br> Creators, Innovators, <br> And Visionaries
+                    </h1>
+                    <p class="text-gray-500 text-sm sm:text-base">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime neque expedita id aliquam est
+                        aut, autem eius eveniet, voluptatibus numquam nobis, molestias officia deserunt natus quae
+                        quisquam odit accusamus fugiat.
+                    </p>
+                </div>
+
+                <!-- Right Features Grid -->
+                <div class="w-full lg:w-3/5">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
+                        <!-- Feature 1 -->
+                        <div class="space-y-3 p-5">
+                            <div
+                                class="bg-gray-100 w-12 sm:w-14 h-auto rounded-lg p-3 flex justify-center items-center">
+                                <img src="./icons/client.png" alt="icons" class="w-8 h-8">
                             </div>
+                            <h2 class="font-semibold text-xl sm:text-2xl">Client-Centric Approach</h2>
+                            <p class="text-gray-500 text-sm sm:text-base">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, similique hic. Sequi
+                                blanditiis reiciendis dolor, asperiores consectetur quisquam animi, libero veritatis
+                                magnam, quas illo iusto nostrum aspernatur ipsum nulla. Aliquid!
+                            </p>
                         </div>
 
-                        <img src="./images/bg.jpg" alt="image" class="h-[100%] w-[100%] rounded-lg ">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="w-[100%] h-[12vh] text-white bg-black flex justify-evenly items-center">
-            <div>
-                <h1 class="text-[1.8rem] font-medium ">Branding</h1>
-            </div>
-            <div class="">
-                <h1 class="text-[1.8rem] font-medium">Website</h1>
-            </div>
-            <div class="">
-                <h1 class="text-[1.8rem] font-medium">Digital Marketing</h1>
-            </div>
-            <div class="">
-                <h1 class="text-[1.8rem] font-medium">App</h1>
-            </div>
-        </div>
-
-        <div class="w-[100%] h-[45vh] bg-[#F5F5F5] flex px-[100px]">
-            <div class="w-[50%] h-[100%] flex item-center pt-30">
-                <h1 class="text-[3rem] font-semibold">Microsoft Design <br> Superpassed Our <br> Expectations</h1>
-            </div>
-            <div class="w-[50%] h-[100%] flex justify-center flex-col">
-                <p class="w-[70%] text-gray-500 mb-6 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Deleniti
-                    reprehenderit, sint sit culpa
-                    nesciunt excepturi, placeat sapiente quod quibusdam eligendi nostrum! Sed, dolore saepe aperiam
-                    explicabo dolorum est ullam mollitia.</p><br>
-                <p
-                    class="w-[160px] mt-2 block text-center bg-slate-200 py-[7px] border-[2px] border-[#c8c9cc] rounded-full">
-                    Get in Touch Now</p>
-            </div>
-        </div>
-
-        <div class="w-[100%] h-[75vh] flex px-[100px] py-12">
-            <div class="w-[40%] h-[100%] pt-40">
-                <h1 class="text-[3.5rem] font-semibold">Passionate <br> creators, Innovators, <br> And Visionaries</h1>
-                <p class="w-[70%]  text-gray-500 mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime
-                    neque
-                    expedita id aliquam est aut,
-                    autem eius eveniet, voluptatibus numquam nobis, molestias officia deserunt natus quae quisquam odit
-                    accusamus fugiat.</p>
-            </div>
-            <div class="w-[60%] h-[100%] ">
-                <div class="flex mb-8 mt-6">
-                    <div class="w-[50%] h-[40%] gap-4  p-5">
-                        <div class="bg-gray-100 w-[12%] h-auto rounded-lg p-3 flex justify-center item-center">
-                            <img src="./icons/client.png" alt="icons" class="w-8 h-8">
+                        <!-- Feature 2 -->
+                        <div class="space-y-3 p-5">
+                            <div
+                                class="bg-gray-100 w-12 sm:w-14 h-auto rounded-lg p-3 flex justify-center items-center">
+                                <img src="./icons/strategy.png" alt="icons" class="w-8 h-8">
+                            </div>
+                            <h2 class="font-semibold text-xl sm:text-2xl">Strategic Thinking</h2>
+                            <p class="text-gray-500 text-sm sm:text-base">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, similique hic. Sequi
+                                blanditiis reiciendis dolor, asperiores consectetur quisquam animi, libero veritatis
+                                magnam, quas illo iusto nostrum aspernatur ipsum nulla. Aliquid!
+                            </p>
                         </div>
-                        <h2 class="font-semibold mt-3 text-[1.6rem]">Client-Centric Approch</h2>
-                        <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
-                            similique
-                            hic. Sequi blanditiis
-                            reiciendis dolor, asperiores consectetur quisquam animi, libero veritatis magnam, quas illo
-                            iusto nostrum aspernatur ipsum nulla. Aliquid!</p>
-                    </div>
-                    <div class="w-[50%] h-[40%] gap-3  p-5">
-                        <div class="bg-gray-100 w-[12%] h-auto rounded-lg p-3 flex justify-center item-center">
-                            <img src="./icons/strategy.png" alt="icons" class="w-8 h-8">
+
+                        <!-- Feature 3 -->
+                        <div class="space-y-3 p-5">
+                            <div
+                                class="bg-gray-100 w-12 sm:w-14 h-auto rounded-lg p-3 flex justify-center items-center">
+                                <img src="./icons/creative.png" alt="icons" class="w-8 h-8">
+                            </div>
+                            <h2 class="font-semibold text-xl sm:text-2xl">Creative Excellence</h2>
+                            <p class="text-gray-500 text-sm sm:text-base">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, similique hic. Sequi
+                                blanditiis reiciendis dolor, asperiores consectetur quisquam animi, libero veritatis
+                                magnam, quas illo iusto nostrum aspernatur ipsum nulla. Aliquid!
+                            </p>
                         </div>
-                        <h2 class="font-semibold mt-3 text-[1.6rem]">Strategic Thinking</h2>
-                        <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
-                            similique
-                            hic. Sequi blanditiis
-                            reiciendis dolor, asperiores consectetur quisquam animi, libero veritatis magnam, quas illo
-                            iusto nostrum aspernatur ipsum nulla. Aliquid!</p>
-                    </div>
-                </div>
-                <div class="flex mt-42">
-                    <div class="w-[50%] h-[40%] gap-4  p-5">
-                        <div class="bg-gray-100 w-[12%] h-auto rounded-lg p-3 flex justify-center item-center">
-                            <img src="./icons/creative.png" alt="icons" class="w-8 h-8">
+
+                        <!-- Feature 4 -->
+                        <div class="space-y-3 p-5">
+                            <div
+                                class="bg-gray-100 w-12 sm:w-14 h-auto rounded-lg p-3 flex justify-center items-center">
+                                <img src="./icons/calendar.png" alt="icons" class="w-8 h-8">
+                            </div>
+                            <h2 class="font-semibold text-xl sm:text-2xl">Timely Delivery</h2>
+                            <p class="text-gray-500 text-sm sm:text-base">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, similique hic. Sequi
+                                blanditiis reiciendis dolor, asperiores consectetur quisquam animi, libero veritatis
+                                magnam, quas illo iusto nostrum aspernatur ipsum nulla. Aliquid!
+                            </p>
                         </div>
-                        <h2 class="font-semibold mt-3 text-[1.6rem]">Creative Excellence</h2>
-                        <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
-                            similique
-                            hic. Sequi blanditiis
-                            reiciendis dolor, asperiores consectetur quisquam animi, libero veritatis magnam, quas illo
-                            iusto nostrum aspernatur ipsum nulla. Aliquid!</p>
-                    </div>
-                    <div class="w-[50%] h-[40%] gap-3  p-5">
-                        <div class="bg-gray-100 w-[12%] h-auto rounded-lg p-3 flex justify-center item-center">
-                            <img src="./icons/calendar.png" alt="icons" class="w-8 h-8">
-                        </div>
-                        <h2 class="font-semibold mt-3 text-[1.6rem]">Timely Delivery</h2>
-                        <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
-                            similique
-                            hic. Sequi blanditiis
-                            reiciendis dolor, asperiores consectetur quisquam animi, libero veritatis magnam, quas illo
-                            iusto nostrum aspernatur ipsum nulla. Aliquid!</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="w-[100%] h-[80vh] px-[100px] my-18">
-            <div class="flex flex-col justify-center item-center text-center ">
-                <h1 class="text-[4rem] font-semibold">Tailored Solution For <br>Your Needs</h1>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus expedita est
-                    culpa numquam molestiae
-                    dolor. <br> ipsum dolor sit amet consectetur, adipisicing elit. Natus expedita est culpa numquam</p>
+        <!-- Solutions Section -->
+        <div class="w-full py-12 sm:py-16 px-4 sm:px-8 lg:px-16 xl:px-20">
+            <div class="text-center mb-12 sm:mb-16">
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-4 leading-tight">
+                    Tailored Solutions For <br> Your Needs
+                </h1>
+                <p class="text-gray-500 text-sm sm:text-base max-w-2xl mx-auto">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus expedita est culpa numquam molestiae
+                    dolor. ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
             </div>
-            <div class="mt-20">
-                <div class="w-[100%] h-[30%] flex mb-3">
-                    <div class="w-[50%]">
-                        <h2 class="text-[2.3rem] ">Mobile & Website Design</h2>
-                    </div>
-                    <div class="w-[50%]">
-                        <p class="text-gray-800">
 
+            <!-- Services List -->
+            <div class="space-y-6">
+                <!-- Service 1 -->
+                <div class="border-b border-gray-200 pb-6">
+                    <div class="flex flex-col sm:flex-row gap-4 items-start">
+                        <h2 class="text-xl sm:text-2xl lg:text-3xl font-medium w-full sm:w-2/5">Mobile & Website Design
+                        </h2>
+                        <p class="text-gray-800 text-sm sm:text-base w-full sm:w-2/5">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum corporis, eum id neque ipsa
                             quibusdam voluptates quae! In fugit, modi sunt eum magnam repudiandae labore corrupti.
                         </p>
-                    </div>
-                    <div class="w-[15%] flex justify-end">
-                        <img src="./icons/right-up.png" alt="arrowIcons" class="w-18 h-16 font-semibold rounded-lg ">
+                        <div class="w-full sm:w-1/5 flex justify-start sm:justify-end">
+                            <img src="./icons/right-up.png" alt="arrowIcons" class="w-16 h-16 font-semibold rounded-lg">
+                        </div>
                     </div>
                 </div>
-                <hr>
-                <div class="w-[100%] h-[30%] flex mb-3 mt-6">
-                    <div class="w-[50%]">
-                        <h2 class="text-[2.3rem] ">Website Development</h2>
-                    </div>
-                    <div class="w-[50%]">
-                        <p class="text-gray-800">
 
+                <!-- Service 2 -->
+                <div class="border-b border-gray-200 pb-6">
+                    <div class="flex flex-col sm:flex-row gap-4 items-start">
+                        <h2 class="text-xl sm:text-2xl lg:text-3xl font-medium w-full sm:w-2/5">Website Development</h2>
+                        <p class="text-gray-800 text-sm sm:text-base w-full sm:w-2/5">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum corporis, eum id neque ipsa
                             quibusdam voluptates quae! In fugit, modi sunt eum magnam repudiandae labore corrupti.
                         </p>
-                    </div>
-                    <div class="w-[15%] flex justify-end">
-                        <img src="./icons/right-up.png" alt="arrowIcons" class="w-18 h-16 font-semibold rounded-lg ">
+                        <div class="w-full sm:w-1/5 flex justify-start sm:justify-end">
+                            <img src="./icons/right-up.png" alt="arrowIcons" class="w-16 h-16 font-semibold rounded-lg">
+                        </div>
                     </div>
                 </div>
-                <hr>
-                <div class="w-[100%] h-[30%] flex mb-3 mt-6">
-                    <div class="w-[50%]">
-                        <h2 class="text-[2.3rem] ">Brand Guidline</h2>
-                    </div>
-                    <div class="w-[50%]">
-                        <p class="text-gray-800">
 
+                <!-- Service 3 -->
+                <div class="border-b border-gray-200 pb-6">
+                    <div class="flex flex-col sm:flex-row gap-4 items-start">
+                        <h2 class="text-xl sm:text-2xl lg:text-3xl font-medium w-full sm:w-2/5">Brand Guideline</h2>
+                        <p class="text-gray-800 text-sm sm:text-base w-full sm:w-2/5">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum corporis, eum id neque ipsa
                             quibusdam voluptates quae! In fugit, modi sunt eum magnam repudiandae labore corrupti.
                         </p>
-                    </div>
-                    <div class="w-[15%] flex justify-end">
-                        <img src="./icons/right-up.png" alt="arrowIcons" class="w-18 h-16 font-semibold rounded-lg ">
+                        <div class="w-full sm:w-1/5 flex justify-start sm:justify-end">
+                            <img src="./icons/right-up.png" alt="arrowIcons" class="w-16 h-16 font-semibold rounded-lg">
+                        </div>
                     </div>
                 </div>
-                <hr>
-                <div class="w-[100%] h-[30%] flex mb-3 mt-6">
-                    <div class="w-[50%]">
-                        <h2 class="text-[2.3rem] ">Product Design</h2>
-                    </div>
-                    <div class="w-[50%]">
-                        <p class="text-gray-800">
 
+                <!-- Service 4 -->
+                <div class="border-b border-gray-200 pb-6">
+                    <div class="flex flex-col sm:flex-row gap-4 items-start">
+                        <h2 class="text-xl sm:text-2xl lg:text-3xl font-medium w-full sm:w-2/5">Product Design</h2>
+                        <p class="text-gray-800 text-sm sm:text-base w-full sm:w-2/5">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum corporis, eum id neque ipsa
                             quibusdam voluptates quae! In fugit, modi sunt eum magnam repudiandae labore corrupti.
                         </p>
-                    </div>
-                    <div class="w-[15%] flex justify-end">
-                        <img src="./icons/right-up.png" alt="arrowIcons" class="w-18 h-16 font-semibold rounded-lg ">
+                        <div class="w-full sm:w-1/5 flex justify-start sm:justify-end">
+                            <img src="./icons/right-up.png" alt="arrowIcons" class="w-16 h-16 font-semibold rounded-lg">
+                        </div>
                     </div>
                 </div>
-                <hr>
             </div>
         </div>
 
-        <div class="w-[100%] bg-gray-100 pb-16">
-
-            <div class="w-[100%] flex px-[100px]  pt-30">
-                <div class="w-[50%] h-[100%] flex flex-col justify-start gap-5">
-                    <h1 class="text-[3.3rem] ">We Blend Beauty <br> And Functionality <br> Seamlessly</h1>
-                    <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Sapiente
-                        voluptates quas vero odio
-                        illum <br>
-                        magni quo, commodi error aperiam explicabo quisquam, </p>
-                    <div class="flex gap-5 mt-8">
-
-                        <button class=" rounded-full px-5 py-2 border-2 border-black">Get Touch Now</button>
+        <!-- Beauty & Functionality Section -->
+        <div class="w-full bg-gray-100 py-12 sm:py-16 px-4 sm:px-8 lg:px-16 xl:px-20">
+            <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
+                <div class="w-full lg:w-1/2 space-y-6">
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight">
+                        We Blend Beauty <br> And Functionality <br> Seamlessly
+                    </h1>
+                    <p class="text-gray-500 text-sm sm:text-base">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptates quas vero odio
+                        illum magni quo, commodi error aperiam explicabo quisquam,
+                    </p>
+                    <button
+                        class="rounded-full px-6 py-3 border-2 border-black hover:bg-black hover:text-white transition">
+                        Get Touch Now
+                    </button>
+                </div>
+                <div class="w-full lg:w-1/2 flex justify-center">
+                    <div class="relative w-full max-w-md h-96 sm:h-[28rem] bg-yellow-500 rounded-lg">
+                        <img src="./images/bg1.jpg" alt="image" class="w-full h-full rounded-lg object-cover">
                     </div>
                 </div>
-                <div class=" w-[50%] h-[100%] flex justify-center item-center ">
-                    <div class="relative w-110 h-100 bg-yellow-500 rounded-lg">
-                        <img src="./images/bg1.jpg" alt="image" class="w-110 h-100 rounded-lg ">
-                    </div>
-                </div>
-
             </div>
         </div>
 
-        <div class="w-[100%] h-[100%] px-[100px]">
-            <div class="w-[100%] h-[20%] flex py-12">
-                <div class="w-[70%] flex flex-col justify-center">
-                    <h2 class="text-[3rem]">Witness Our <br> Success Stories</h2>
+        <!-- Portfolio Section -->
+        <div class="w-full py-12 sm:py-16 px-4 sm:px-8 lg:px-16 xl:px-20">
+            <div class="flex flex-col lg:flex-row gap-8 mb-8 sm:mb-12">
+                <div class="w-full lg:w-3/5">
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight">
+                        Witness Our <br> Success Stories
+                    </h2>
                 </div>
-                <div class="w-[30%] flex flex-col justify-center text-gray-500">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime voluptatum nesciunt rem, ad
-                        soluta ab ex, distinctio perspiciatis quos aperiam esse animi consequuntur, accusamus doloribus
-                        enim sit similique atque? Exercitationem!</p>
+                <div class="w-full lg:w-2/5 flex items-center">
+                    <p class="text-gray-500 text-sm sm:text-base">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime voluptatum nesciunt rem, ad
+                        soluta ab ex, distinctio perspiciatis quos aperiam esse animi consequuntur.
+                    </p>
                 </div>
             </div>
-            <div class="">
-                <div class="rounded-lg flex  w-[100%] gap-4">
 
-                    <div class="w-[50%]">
+            <!-- Portfolio Grid -->
+            <div class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="rounded-lg overflow-hidden">
                         <img src="./images/bg3.jpg" alt="" class="rounded-lg h-auto w-full">
                     </div>
-                    <div class="w-[50%]">
-                        <img src="./images/bg4.jpg" alt="" class="rounded-lg ">
+                    <div class="rounded-lg overflow-hidden">
+                        <img src="./images/bg4.jpg" alt="" class="rounded-lg h-auto w-full">
                     </div>
                 </div>
-                <div class="rounded-lg flex  w-[100%] gap-4 mt-4">
-
-                    <div class="w-[50%]">
-                        <img src="./images/bg5.jpg" alt="" class="rounded-lg ">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="rounded-lg overflow-hidden">
+                        <img src="./images/bg5.jpg" alt="" class="rounded-lg h-auto w-full">
                     </div>
-                    <div class="w-[50%]">
+                    <div class="rounded-lg overflow-hidden">
                         <img src="./images/bg6.jpg" alt="" class="rounded-lg h-[89%] w-full">
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class=" w-[100%] h-[90%] dark:bg-gray-900 text-white flex justify-center item-center text-center "
-            id="contact">
-            <div class="my-43 ">
-                <h1 class="text-[4rem]">Let's Create Together</h1>
-                <p class="text-gray-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo earum aspernatur
-                    voluptate blanditiis, <br> fugiat quidem optio vero vel impedit id beatae, nam aut cupiditate
-                    dolorem
-                    possimus.</p>
-
-                <button class="bg-white px-8 py-2 rounded-full text-black mt-6">Get Start</button>
+        <!-- CTA Section -->
+        <div class="w-full bg-gray-900 text-white py-16 sm:py-24 px-4 text-center" id="contact">
+            <div class="max-w-3xl mx-auto space-y-6">
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold">Let's Create Together</h1>
+                <p class="text-gray-300 text-sm sm:text-base">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo earum aspernatur voluptate
+                    blanditiis, fugiat quidem optio vero vel impedit id beatae, nam aut cupiditate dolorem possimus.
+                </p>
+                <button class="bg-white text-black px-8 py-3 rounded-full hover:bg-gray-100 transition font-medium">
+                    Get Started
+                </button>
             </div>
         </div>
 
